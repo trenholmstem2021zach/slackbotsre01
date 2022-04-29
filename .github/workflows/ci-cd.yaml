@@ -8,12 +8,3 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
     - uses: actions/checkout@v2
-    - uses: kciter/aws-ecr-action@v2
-      with:
-        access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-        secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        account_id: '008577686731'
-        repo: dsva/platform-support-slackbot
-        region: us-gov-west-1
-        tags: latest,${{ github.sha }}
-        dockerfile: Dockerfile
