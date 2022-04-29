@@ -9,4 +9,4 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: list one
-      run: ls -lR
+      run: node --version
